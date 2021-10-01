@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>js string</title>
+</head>
+<body>
+    <script>
+        function wal()
+        {
+const x="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed eros lectus. Pellentesque cursus libero et purus vestibulum congue. Maecenas imperdiet ligula eget ipsum placerat suscipit. Nam vitae pretium lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at nibh fermentum, posuere ipsum id, pretium sem. Nam facilisis sem nisi. Nunc viverra purus nec nibh imperdiet dignissim. Vivamus risus augue, malesuada a eros et, euismod ornare felis. Aenean neque purus, auctor ut enim quis, gravida pulvinar tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque in tristique orci. Donec magna sem, euismod sed turpis ullamcorper, convallis fermentum nisl. Maecenas metus ligula, molestie quis dolor sit amet, porta pretium erat."
+ const j=document.getElementById('j').value  
+ const d=document.getElementById('d').value     
+
+//1
+console.log(x.length)
+//2
+console.log(x.charAt(j))
+//3
+document.write(x.toUpperCase())
+//4
+console.log(x.substr(j,d))
+//5
+const jd =x.replace("Lorem", "dis ork")
+console.log(jd)
+document.write (x.replace("Lorem","dis ork"))
+//6
+console.log(x.split('a').length-1)
+//7
+const dis=x.split(",")
+console.log(dis)
+//8
+
+
+}
+
+</script>
+
+<input type="number" id="j"><br>
+<input type="number" id="d"><br>
+<button onclick="wal()">walnij</button>
+    
+</body>
+</html>
